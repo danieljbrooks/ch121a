@@ -13,7 +13,7 @@
 \null\hfill\begin{tabular}[t]{l@{}}
   \textbf{HW. 5 Ch121 Atomic Simulations}\\
   \textit{Winter 2017}\\
-  \textit{TA: Daniel Brooks (daniel.brooks@caltech.edu)}
+  \textit{Email to: Daniel Brooks (daniel.brooks@caltech.edu)}
 \end{tabular}
 \vspace{10mm}
 
@@ -26,12 +26,7 @@ In this homework assignment we are going to become familiar with a common open s
 We will use LAMMPS to run molecular dynamics on a box of water which will give us a trajectory. 
 Next we will utilize a code written in the Goddard group known as 2PT (Two Phase Thermodynamics) to calculate the thermodynamic properties of our system, from the trajectory. \\
 
-As a challenge students will be given a polymer system which they will need to run dynamics on and then analyze. \\
-
-This homework assignment should be thought of as the 'midterm' for the class, you will need to give a full lab report of your findings.\\
-
-The water box calculation will be done to show you how the code works, you will then do your own analysis on the polymer system.
-Only the polymer system will be considered in the final write-up. \\
+You will perform a 2PT analysis on a collection of water molecules and complete a scientific writeup. \\
 
 \section*{Materials To Be Reviewed Before The Lab Session}
 \noindent\rule[0.5ex]{\linewidth}{1pt}\\
@@ -198,7 +193,7 @@ Write the following lines inside this file.\\
 \#PBS -q workq\\
 \#PBS -N wbox\_2pt\\
 cd \$PBS\_O\_WORKDIR\\
-~tpascal/codes/bin/md\_analysis waterbox\_2pt.in\\
+/ul/tpascal/codes/bin/md\_analysis waterbox\_2pt.in\\
 
 \item We are ready to submit this thermodynamics analysis, submit your job to the cluster (it should take a few minutes to calculate).
 \end{enumerate}
